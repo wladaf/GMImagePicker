@@ -100,6 +100,12 @@ static CGSize const kPopoverContentSize = {480, 720};
 @property (nonatomic, assign) BOOL allowsMultipleSelection;
 
 /**
+ *  Maximum number of items for selection. Default = 5;
+ *
+ */
+@property (nonatomic, assign) NSInteger maximumItemsForSelect;
+
+/**
  * In the case where allowsMultipleSelection = NO, set this to YES to have the user confirm their selection. Default is NO.
  */
 @property (nonatomic, assign) BOOL confirmSingleSelection;

@@ -27,6 +27,7 @@
         _displayAlbumsNumberOfAssets = YES;
         _autoDisableDoneButton = YES;
         _allowsMultipleSelection = YES;
+        _maximumItemsForSelect = 5;
         _confirmSingleSelection = NO;
         _showCameraButton = NO;
         
