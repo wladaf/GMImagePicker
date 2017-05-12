@@ -66,6 +66,8 @@
         _navigationBarTextColor = [UIColor darkTextColor];
         _navigationBarTintColor = [UIColor darkTextColor];
         
+        _navigationBarTranslucent = NO;
+        
         _toolbarBarTintColor = [UIColor whiteColor];
         _toolbarTextColor = [UIColor darkTextColor];
         _toolbarTintColor = [UIColor darkTextColor];
@@ -95,6 +97,8 @@
     
     _navigationController.navigationBar.backgroundColor = _navigationBarBackgroundColor;
     _navigationController.navigationBar.tintColor = _navigationBarTintColor;
+    _navigationController.toolbar.barTintColor = _toolbarBarTintColor;
+
     NSDictionary *attributes;
     if (_useCustomFontForNavigationBar) {
         attributes = @{NSForegroundColorAttributeName : _navigationBarTextColor,
@@ -120,7 +124,7 @@
     _navigationController = [[UINavigationController alloc] initWithRootViewController:albumsViewController];
     _navigationController.delegate = self;
     
-    _navigationController.navigationBar.translucent = YES;
+    _navigationController.navigationBar.translucent = _navigationBarTranslucent;
     [_navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     _navigationController.navigationBar.shadowImage = [UIImage new];
     

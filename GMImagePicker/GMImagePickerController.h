@@ -164,6 +164,7 @@ static CGSize const kPopoverContentSize = {480, 720};
 @property (nonatomic, strong) UIColor *navigationBarBackgroundColor;
 @property (nonatomic, strong) UIColor *navigationBarTextColor;
 @property (nonatomic, strong) UIColor *navigationBarTintColor;
+@property (nonatomic, strong) BOOL navigationBarTranslucent;
 @property (nonatomic, strong) NSString *pickerFontName;
 @property (nonatomic, strong) NSString *pickerBoldFontName;
 @property (nonatomic) CGFloat pickerFontNormalSize;
